@@ -1,0 +1,61 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 226px;
+        }
+        .style2
+        {
+            width: 563px;
+        }
+        .style4
+        {
+            height: 154px;
+        }
+        </style>
+</head>
+<body background-image: url('images/g7 new.jpg') >
+    <form id="form1" runat="server">
+    <div align="center" 
+        
+        
+        style="background-color: #008000; background-image: url('images/g777.jpg'); background-repeat: repeat; background-attachment: fixed;">
+        <table style="width:100%; height: 717px;">
+            <tr>
+                <td class="style4" colspan="3" bgcolor="Black">
+                    <asp:Image  ID="Image1" runat="server" Height="67px"
+                        ImageUrl="~/images/Title.png" Width="838px" align="center"/>
+                </td>
+            </tr>
+            <tr>
+                <td class="style1">
+                    &nbsp;</td>
+                <td class="style2">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+                </td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style1">
+                    &nbsp;</td>
+                <td class="style2">
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>
